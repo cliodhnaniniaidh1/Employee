@@ -37,18 +37,19 @@ class EmployeeTest {
                 "Female", "Full-Time", 56);});
         assertEquals("Invalid PPS ID", exception.getMessage());
     }
-//
-//    @Test
-//    void validEmployment(){
-//
-//    }
-//
-//    @Test
-//    void invalidEmployment(){
-//        Exception exception = assertThrows(IllegalArgumentException.class, () ->{new Employee("Cliodhna", "12345678912",
-//                "Female", "Student", 56);});
-//        assertEquals("Invalid Employment", exception.getMessage());
-//    }
+
+    @Test
+    void validEmployment(){
+        Employee myEmployee = new Employee("Cliodhna", "12345678912", "Female", "Full-Time", 56);
+        assertEquals("Full-Time", myEmployee.getEmployment());
+    }
+
+    @Test
+    void invalidEmployment(){
+        Exception exception = assertThrows(IllegalArgumentException.class, () ->{new Employee("Cliodhna", "12345678912",
+                "Female", "Student", 56);});
+        assertEquals("Invalid Employment", exception.getMessage());
+    }
 //
 //    @Test
 //    void validGender(){
