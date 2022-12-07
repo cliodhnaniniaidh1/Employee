@@ -17,12 +17,13 @@ public class Employee {
             throw new IllegalArgumentException("Invalid name");
         }
 
-//        if(PPS.length()==11){
-//            System.out.println("Valid ID");
-//        }
-//        else{
-//            throw new IllegalArgumentException("Invalid PPS ID");
-//        }
+        if(PPS.length()==11){
+            System.out.println("Valid ID");
+            this.PPS = PPS;
+        }
+        else{
+            throw new IllegalArgumentException("Invalid PPS ID");
+        }
 //
 //        if(employment.equals("Full-Time") || employment.equals("Part-Time") || employment.equals("Contract")){
 //            System.out.println("Valid Employment");
@@ -47,9 +48,9 @@ public class Employee {
 //        }
     }
 
-//    public String getPPS() {
-//        return PPS;
-//    }
+    public String getPPS() {
+        return PPS;
+    }
 //    public String getGender() {
 //        return gender;
 //    }
