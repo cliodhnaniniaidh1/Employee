@@ -50,19 +50,19 @@ class EmployeeTest {
                 "Female", "Student", 56);});
         assertEquals("Invalid Employment", exception.getMessage());
     }
-//
-//    @Test
-//    void validGender(){
-//        Employee myEmployee = new Employee("Cliodhna", "12345678912", "Female", "Full-Time", 22);
-//        assertEquals("Female", myEmployee.getGender());
-//    }
-//
-//    @Test
-//    void invalidGender(){
-//        Exception exception = assertThrows(IllegalArgumentException.class, () ->{new Employee("Cliodhna", "12345678913",
-//                "Dog", "Part-Time", 56);});
-//        assertEquals("Invalid Gender", exception.getMessage());
-//    }
+
+    @Test
+    void validGender(){
+        Employee myEmployee = new Employee("Cliodhna", "12345678912", "Female", "Full-Time", 22);
+        assertEquals("Female", myEmployee.getGender());
+    }
+
+    @Test
+    void invalidGender(){
+        Exception exception = assertThrows(IllegalArgumentException.class, () ->{new Employee("Cliodhna", "12345678913",
+                "Dog", "Part-Time", 56);});
+        assertEquals("Invalid Gender", exception.getMessage());
+    }
 //
 //    @Test
 //    void validAge(){
