@@ -32,13 +32,14 @@ public class Employee {
         else{
             throw new IllegalArgumentException("Invalid Employment");
         }
-//
-//        if(gender.equals("Female") || gender.equals("Male") || gender.equals("Non-Binary")) {
-//            System.out.println("Valid Gender");
-//        }
-//        else{
-//            throw new IllegalArgumentException("Invalid Gender");
-//        }
+
+        if(gender.equals("Female") || gender.equals("Male") || gender.equals("Non-Binary")) {
+            System.out.println("Valid Gender");
+            this.gender=gender;
+        }
+        else{
+            throw new IllegalArgumentException("Invalid Gender");
+        }
 //
 //        if(age >= 16){
 //            System.out.println("Valid age");
@@ -52,9 +53,9 @@ public class Employee {
     public String getPPS() {
         return PPS;
     }
-//    public String getGender() {
-//        return gender;
-//    }
+    public String getGender() {
+        return gender;
+    }
     public String getEmployment() {
         return employment;
     }
