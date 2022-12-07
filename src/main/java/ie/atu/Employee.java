@@ -40,14 +40,14 @@ public class Employee {
         else{
             throw new IllegalArgumentException("Invalid Gender");
         }
-//
-//        if(age >= 16){
-//            System.out.println("Valid age");
-//            this.age = age;
-//        }
-//        else{
-//            throw new IllegalArgumentException("Invalid Age, must be over 16");
-//        }
+
+        if(age >= 16){
+            System.out.println("Valid age");
+            this.age = age;
+        }
+        else{
+            throw new IllegalArgumentException("Invalid Age, must be over 16");
+        }
     }
 
     public String getPPS() {
@@ -59,9 +59,9 @@ public class Employee {
     public String getEmployment() {
         return employment;
     }
-//    public int getAge() {
-//        return age;
-//    }
+    public int getAge() {
+        return age;
+    }
     public String getName() {
         return name;
     }
